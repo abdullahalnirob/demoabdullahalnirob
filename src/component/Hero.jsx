@@ -4,7 +4,7 @@ import React,{useEffect} from 'react'
 import me from '../assets/me2.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import Bg from './bg/bg';
+import Bg from './bg/Bg';
 const Hero = () => {
   useEffect(()=>{
    AOS.init({duration:1400})
