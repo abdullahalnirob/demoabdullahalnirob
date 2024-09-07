@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+@font-face {
+  font-family: clash;
+  src: url(./assets/ClashDisplay-Bold.otf);
+}
+
+body {
+  overflow-x: hidden;
+  background-image: radial-gradient(#c2c2c2 2px, transparent 2px);
+  background-size: 65px 65px;
+  background-color: #0c0c0c;
+}
+
+#skill {
+  background-image: linear-gradient(#292929 2px, transparent 2px), linear-gradient(to right, #292929 2px, transparent 2px);
+  background-size: 72px 72px;
+  background-color: #000000;
+}
+
+html {
+  /* user-select: none; */
+  scroll-behavior: smooth;
+}
+
+/* skill */
+.box {
+  border: 1px solid transparent;
+}
+
+.box:hover {
+  border: 1px solid #fff;
+}
+
+.border {
+  border: 5px solid #fff;
+}
+
+@media (max-width:820px) {
+  .talk {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    padding: 15px 0;
+
+  }
+
+  nav ul li {
+    margin: 15px 10px;
+  }
+
+  nav ul {
+    transform: translateX(-2000px);
+    height: 100vh;
+    transition: .3s ease-in-out;
+  }
+
+  nav ul.show {
+    transform: translateX(-0px);
+  }
+}
