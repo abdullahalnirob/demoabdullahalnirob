@@ -52,7 +52,7 @@ const Skill = () => {
             </div>
             <div className="bg-white box hover:bg-black duration-500 cursor-pointer hover:text-white mt-2 shadow-md px-5 py-8 rounded-xl">
               <TbApi className="text-3xl" />
-              <h1 className="text-xl">API's</h1>
+              <h1 className="text-xl">Rest API's</h1>
             </div>
           </div>
           <div className="flex-col">
