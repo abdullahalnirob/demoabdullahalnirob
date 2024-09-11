@@ -11,7 +11,21 @@
 button {
   outline: none;
 }
-
+.arrow{
+  animation: float 1s ease-in-out alternate-reverse infinite;
+  position: relative;
+  top: 20px;
+  /* transition:  ; */
+  
+}
+@keyframes float {
+  100%{
+    top: 0;
+  }
+  0%{
+    top: 20px;
+  }
+}
 @font-face {
   font-family: clash;
   src: url(./assets/ClashDisplay-Bold.otf);

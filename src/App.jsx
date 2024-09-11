@@ -1,5 +1,6 @@
 import About from "./component/About"
 import Experience from "./component/Experience"
+import Footer from "./component/Footer"
 import Hero from "./component/Hero"
 
 import Navbar from "./component/Navbar"
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Skill />
       <Experience />
+      <Footer/>
     </>
   )
 }

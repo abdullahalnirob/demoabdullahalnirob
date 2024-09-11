@@ -15,9 +15,9 @@ const Navbar = () => {
                     <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Education</a></li>
                     <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Contact</a></li>
                 </ul>
-                <a className="rounded-md px-4 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#fff]  text-[#fff]">
+                <a className="rounded-full px-4 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#fff]  text-[#fff]">
                     <span className="absolute w-64 h-0 transition-all duration-500  origin-center rotate-45 -translate-x-20 bg-[#fff] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                    <span className="relative text-[#fff] transition duration-500 group-hover:text-black 2xl:text-2xl ease">Talk With Me</span>
+                    <span className="relative text-[#fff] transition duration-500 group-hover:text-black 2xl:text-2xl ease">Talk With Me📞</span>
                 </a>
                 {
                     show ?

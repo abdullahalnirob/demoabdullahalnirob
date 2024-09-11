@@ -10,16 +10,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiReactrouter } from "react-icons/si";
-import { div } from "framer-motion/client";
+// import { div } from "framer-motion/client";
 const Skill = () => {
   return (
     <div  id="skill">
-    <div className="py-20" data-aos="fade-up">
+    <div className="py-20" data-aos-duration="800" data-aos="fade-up">
       <h1 className="font-[clash] text-5xl text-center text-white">My Skills</h1>
       <p className="px-5 xl:px-80 sm:px-12 md:px-24 text-center py-2 text-[#ccc]">
         I am proficient in creating responsive and dynamic web applications using HTML, CSS, JavaScript, and React.js. My expertise lies in delivering user-friendly interfaces that enhance the overall user experience.
       </p>
-      <div className="px-5 sm:px-20 md:px-36 mt-28">
+      <div  data-aos-duration="900" data-aos="fade-up" className="px-5 sm:px-20 md:px-36 mt-10">
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <div className="flex-col">
             <h1 className="text-2xl text-white">Front end</h1>
@@ -52,7 +52,7 @@ const Skill = () => {
             </div>
             <div className="bg-white box hover:bg-black duration-500 cursor-pointer hover:text-white mt-2 shadow-md px-5 py-8 rounded-xl">
               <TbApi className="text-3xl" />
-              <h1 className="text-xl">API's</h1>
+              <h1 className="text-xl">Rest API's</h1>
             </div>
           </div>
           <div className="flex-col">
