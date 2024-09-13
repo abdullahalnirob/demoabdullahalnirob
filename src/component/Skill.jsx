@@ -10,12 +10,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiReactrouter } from "react-icons/si";
-// import { div } from "framer-motion/client";
 const Skill = () => {
   return (
-    <div  id="skill">
-    <div className="py-20" data-aos-duration="800" data-aos="fade-up">
-      <h1 className="font-[clash] text-5xl text-center text-white">My Skills</h1>
+    <div  id="skill" className="skill">   
+    <div className="py-20 h-full"  data-aos-duration="800" data-aos="fade-up">
+      <h1 className="font-[clash] text-5xl text-center text-white">My Skills_</h1>
       <p className="px-5 xl:px-80 sm:px-12 md:px-24 text-center py-2 text-[#ccc]">
         I am proficient in creating responsive and dynamic web applications using HTML, CSS, JavaScript, and React.js. My expertise lies in delivering user-friendly interfaces that enhance the overall user experience.
       </p>
@@ -33,7 +32,7 @@ const Skill = () => {
             </div>
             <div className="bg-white box hover:bg-black duration-500 cursor-pointer hover:text-white mt-2 shadow-md px-5 py-8 rounded-xl">
               <RiTailwindCssFill className="text-3xl" />
-              <h1 className="text-xl">Tailwind Css</h1>
+              <h1 className="text-xl">Tailwind CSS</h1>
             </div>
             <div className="bg-white box hover:bg-black duration-500 cursor-pointer hover:text-white mt-2 shadow-md px-5 py-8 rounded-xl">
               <FaJs className="text-3xl" />
@@ -82,6 +81,7 @@ const Skill = () => {
         </div>
       </div>
     </div>
+
   )
 }
 

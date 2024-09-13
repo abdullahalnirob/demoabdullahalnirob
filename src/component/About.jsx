@@ -1,17 +1,12 @@
 import logo from '../assets/logo.png'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
-// import { useEffect } from 'react';
 const About = () => {
-    // useEffect(()=>{
-    //     AOS.init({duration:900})
-    //    },[])
+
     return (
         <>
-            <div id='about' style={{ overflowX: "hidden" }} className="flex flex-col lg:flex-row  py-[130px]  justify-between px-8 md:px-14 items-center bg-[#fafafa]">
-                <img data-aos-duration="600" data-aos="zoom-out" src={logo} className='w-[400px] ' />
+            <div id='about' style={{ overflowX: "hidden" }} className="flex flex-col lg:flex-row py-28 lg:h-[100vh]  justify-between px-4 md:px-14 items-center bg-[#fafafa]">
+                <img data-aos-duration="600" data-aos="zoom-out" src={logo} className='w-[300px] md:w-[400px] ' />
                 <div className='lg:pl-20'>
-                    <p className='text-3xl text-[#ccc]'>Hey there I'm</p>
+                    <p className='text-3xl text-[#757575]'>Hey there I'm</p>
                     <h1 className=' text-7xl font-[clash]' data-aos-duration="700" data-aos="fade-up">Abdullah Al Nirob</h1>
                     <h1 className='mt-3 text-5xl font-[clash]' data-aos-duration="800" data-aos="fade-up">Web Develper</h1>
                     <div className='grid grid-cols-3'>

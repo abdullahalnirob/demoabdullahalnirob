@@ -9,19 +9,27 @@ const Footer = () => {
           {/* About Section */}
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
             <h3 className="text-xl font-bold mb-3">About Us</h3>
-           <p className='pr-12'>
-           I’m Abdullah Al Nirob, a skilled Front-end Web Developer from Bangladesh, specializing in React.js, HTML, CSS, and JavaScript. 
-           </p>
+            <p className='pr-12'>
+              I’m Abdullah Al Nirob, a skilled Front-end Web Developer from Bangladesh, specializing in React.js, HTML, CSS, and JavaScript.
+            </p>
           </div>
 
           {/* Quick Links */}
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
             <h3 className="text-xl font-bold mb-3">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">Menu</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-white relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+              >Home</a></li>
+              <li><a href="#" className="hover:text-white relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+              >Menu</a></li>
+              <li><a href="#" className="hover:text-white relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+              >Contact</a></li>
+              <li><a href="#" className="hover:text-white relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+              >Privacy Policy</a></li>
             </ul>
           </div>
 

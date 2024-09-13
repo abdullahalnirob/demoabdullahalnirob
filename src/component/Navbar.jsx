@@ -1,23 +1,81 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo2.png'
+import { Link as LinkRouter } from 'react-router-dom'
+
 const Navbar = () => {
     const [show, setshow] = useState(false)
     return (
         <div>
-            <nav className='bg-[#222] text-white z-50 p-3 flex justify-between items-center'>
+            <nav className='bg-[#222] shadow shadow-[#3f3f3f] fixed top-0 left-0 right-0 text-white z-50 p-3 flex justify-between items-center'>
                 <img src={logo} alt="" className='w-[15%] md:w-[6%] lg:w-[4%]' />
-                <ul className={`flex z-50 ${show ? 'show' : ''}`}>
-                    <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Home</a></li>
-                    <li><a href="#about" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>About</a></li>
-                    <li><a href="#skill" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Skills</a></li>
-                    <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Projects</a></li>
-                    <li><a href="#ex" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Experience</a></li>
-                    <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Education</a></li>
-                    <li><a href="#" className='text-xl 2xl:text-2xl px-4 hover:text-[#ccc] duration-300'>Contact</a></li>
+                <ul className={`flex h-full md:h-auto z-50 ${show ? 'show' : ''}`}>
+                    <LinkRouter to={'/#top'}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4 '> <button
+                        className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                    >
+                        Home
+                    </button></a></li></LinkRouter>
+                    <LinkRouter to={'/#about'}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            About
+                        </button>
+                    </a></li></LinkRouter>
+                    <LinkRouter to={'/#skill'}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            Skill
+                        </button>
+                    </a></li></LinkRouter>
+                    <LinkRouter to={"/#experience"}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            Experience
+                        </button>
+                    </a></li></LinkRouter>
+                    <LinkRouter to={"/projects#top"}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            Projects
+                        </button>
+                    </a></li></LinkRouter>
+                    <li className='cursor-default'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            Education
+                        </button>
+                    </a></li>
+                    <li className='cursor-default'><a className='text-xl 2xl:text-2xl px-4'>
+                        <button
+                            className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 dark:after:bg-white 
+      after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                        >
+                            Contact
+                        </button>
+                    </a></li>
                 </ul>
                 <a className="rounded-full px-4 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#fff]  text-[#fff]">
-                    <span className="absolute w-64 h-0 transition-all duration-500  origin-center rotate-45 -translate-x-20 bg-[#fff] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                    <span className="relative text-[#fff] transition duration-500 group-hover:text-black 2xl:text-2xl ease">Talk With Me📞</span>
+                    <span className="absolute w-64 h-0 transition-all  origin-center rotate-45 -translate-x-20 bg-[#fff] top-1/2 group-hover:h-64 group-hover:-translate-y-32"></span>
+                    <span className="relative text-[#fff] transition  group-hover:text-black 2xl:text-2xl">
+                        <span className="relative inline-flex overflow-hidden">
+                            <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[170%] group-hover:skew-y-12">
+                                Talk With Me📞
+                            </div>
+                            <div className="absolute translate-y-[170%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                                Talk With Me📞
+                            </div>
+                        </span>
+                    </span>
                 </a>
                 {
                     show ?
