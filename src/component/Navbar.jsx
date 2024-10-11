@@ -6,7 +6,7 @@ const Navbar = () => {
     const [show, setshow] = useState(false)
     return (
         <div>
-            <nav className='bg-[#222] shadow shadow-[#3f3f3f] fixed top-0 left-0 right-0 text-white z-50 p-3 flex justify-between items-center'>
+            <nav className='bg-[#181818] shadow shadow-[#3f3f3f] fixed top-0 left-0 right-0 text-white z-50 p-3 flex justify-between items-center'>
                 <img src={logo} alt="" className='w-[15%] md:w-[6%] lg:w-[4%]' />
                 <ul className={`flex h-full md:h-auto z-50 ${show ? 'show' : ''}`}>
                     <LinkRouter to={'/#top'}><li className='cursor-pointer'><a className='text-xl 2xl:text-2xl px-4 '> <button
@@ -68,10 +68,10 @@ const Navbar = () => {
                     <span className="absolute w-64 h-0 transition-all  origin-center rotate-45 -translate-x-20 bg-[#fff] top-1/2 group-hover:h-64 group-hover:-translate-y-32"></span>
                     <span className="relative text-[#fff] transition  group-hover:text-black 2xl:text-2xl">
                         <span className="relative inline-flex overflow-hidden">
-                            <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[170%] group-hover:skew-y-12">
+                            <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[200%] group-hover:skew-y-16">
                                 Talk With Me📞
                             </div>
-                            <div className="absolute translate-y-[170%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            <div className="absolute translate-y-[200%] skew-y-16 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
                                 Talk With Me📞
                             </div>
                         </span>

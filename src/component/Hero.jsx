@@ -1,61 +1,83 @@
-import React, { useEffect } from 'react'
-import me from '../assets/me2.jpg'
-import arrow from '../assets/arrow.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-// import { FaLongArrowAltDown } from "react-icons/fa";
+import React, { useEffect } from "react";
+import me from "../assets/me2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
-import Bg from './bg/Bg';
+import Bg from "./bg/Bg";
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 })
-  }, [])
+    AOS.init();
+  }, []);
   return (
     <>
-
       <Bg />
-      <div className='h-[90vh] md:h-[100vh] mt-20 md:mt-0' >
-      <div id='top' className='pb-4 md:pb-20'></div>
-        <div className='hidden md:flex md:flex-col absolute top-52 2xl:top-64 left-4 text-white text-3xl 2xl:text-4xl' data-aos="fade-right" data-aos-duration="1400">
-          <FaFacebook className='m-4 cursor-pointer hover:text-[#eeeeee]' />
-          <FaInstagram className='m-4 cursor-pointer hover:text-[#eeeeee]' />
-          <FaXTwitter className='m-4 hover:text-[#eeeeee]  cursor-pointer' />
-          <FaYoutube className='m-4 hover:text-[#eeeeee]  cursor-pointer' />
-          <FaLinkedin className='m-4 hover:text-[#eeeeee]  cursor-pointer' />
+      <div className="h-[90vh] md:h-[100vh] md:mt-0">
+        <div id="top" className="pb-4 md:pb-20"></div>
+        <div className="flex flex-col mt-[40%] md:mt-[2%] items-center justify-center md:justify-normal">
+          <img
+            src={me}
+            className="w-1/2 md:w-1/6 rounded-full border-4 border-white shadow-2xl shadow-black"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <div className="text-center md:text-left ml-10">
+            <span
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className="text-white text-xl"
+            >
+              I'm
+              <br />
+              <h1
+                className="font-[clash] text-5xl md:text-7xl text-white font-bold"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                Abdullah Al Nirob
+              </h1>
+            </span>
+          </div>
+          <h2
+            className="text-3xl md:text-4xl text-white font-bold"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            Front-end Developer.
+          </h2>
+          <button
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="rounded-md px-3.5 my-2 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  text-white"
+          >
+            <a href="#about">
+              <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              <span class="relative text-white text-xl transition duration-300 group-hover:text-black ease">
+                Explore my Web
+              </span>
+            </a>
+          </button>
         </div>
-        <div className='flex items-center justify-center flex-col'>
-          <img data-aos-duration="1600" data-aos="fade-up" src={me} className='rounded-full z-20 border border-white w-[60%] sm:w-[30%] md:w-[27%] lg:w-[18%] xl:w-[18%] 2xl:w-[20%] mt-10' />
-        </div>
-        <div className='text-[#fff] ] text-up'>
-          <span data-aos-duration="1900" data-aos="fade-up" className='grid place-content-center'>
-            <span className='text-xl 2xl:text-4xl'>I'm</span>
-            <div data-aos="fade-up" className='text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-[clash]'>
-              Abdullah Al Nirob
-            </div>
-            <center>
-              <h1 data-aos-duration="2000" data-aos="fade-up" className='text-3xl 2xl:text-5xl 2xl:my-4'>Web Developer.</h1>
-              <a href='#about'>
-                <button data-aos-duration="2700" data-aos="fade-up" className="rounded-full px-4 py-2 2xl:py-4 2xl:px-4  m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#fff]  text-[#fff]">
-                  <span className="absolute w-64 h-0 transition-all duration-500  origin-center rotate-45 -translate-x-20 bg-[#fff] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                  <span className="relative text-[#fff] transition duration-500 group-hover:text-black text-xl xl:text-2xl ease">See my Magic!✨</span>
-                </button>
-              </a>
-            </center>
-          </span>
-        </div>
-        <div className="text-white hidden md:flex flex-col absolute right-10 arrow-up items-center justify-center text-3xl">
-          <h3 className='text-xl'>SCROLL DOWN</h3>
-          {/* <img src={arrow} alt="" /> */}
-          <a href="#about"><img src={arrow} className='cursor-pointer arrow w-5' /></a>
+        <div data-aos="fade-right" data-aos-duration="1300" className="flex flex-row md:flex-col absolute top-[12%]  md:top-[9%] left-[25%] md:left-7 w-full">
+          <div className="m-3">
+            <FaFacebook className="text-xl cursor-pointer text-white" />
+          </div>
+          <div className="m-3">
+            <FaInstagram className="text-xl cursor-pointer text-white" />
+          </div>
+          <div className="m-3">
+            <FaTwitter className="text-xl cursor-pointer text-white" />
+          </div>
+          <div className="m-3">
+            <FaLinkedin className="text-xl cursor-pointer text-white" />
+          </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
